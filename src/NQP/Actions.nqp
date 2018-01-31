@@ -254,7 +254,7 @@ class NQP::Actions is HLL::Actions {
         # See if we've exported any HOWs.
         if nqp::existskey($UNIT, 'EXPORTHOW') {
             for $UNIT<EXPORTHOW>.WHO {
-        $*LANG.set_how($_.key, $_.value);
+                $*LANG.set_how($_.key, $_.value);
             }
         }
     }
